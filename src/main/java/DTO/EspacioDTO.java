@@ -1,6 +1,6 @@
-package com.LS.Aplicacion.DTO;
+package DTO;
 
-import com.LS.Aplicacion.ObjetoValor.Ubicacion;
+import ObjetoValor.Ubicacion;
 
 import java.io.Serializable;
 import java.util.UUID;

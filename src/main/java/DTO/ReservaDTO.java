@@ -1,7 +1,7 @@
-package com.LS.Aplicacion.DTO;
+package DTO;
 
-import com.LS.Aplicacion.ObjetoValor.EstadoReserva;
-import com.LS.Aplicacion.ObjetoValor.Usuario;
+import ObjetoValor.EstadoReserva;
+import ObjetoValor.Usuario;
 
 import java.io.Serializable;
 import java.sql.Timestamp;

@@ -1,4 +1,4 @@
-package com.LS.Aplicacion.DTO;
+package DTO;
 
 import java.io.Serializable;
 
