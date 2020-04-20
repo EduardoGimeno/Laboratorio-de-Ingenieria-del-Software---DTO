@@ -11,11 +11,13 @@
 
 package ObjetoValor;
 
+import javax.persistence.Embeddable;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+@Embeddable
 public class Usuario {
 
     @Size(min = 2, max = 20, message="El nombre tiene que tener entre 2 y 20 caracteres.")

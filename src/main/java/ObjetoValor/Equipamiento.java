@@ -10,9 +10,11 @@
  * @version 2.0, 01/04/2020
  */
 
-@Embeddable
 package ObjetoValor;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class Equipamiento {
 
     private TipoEquipamiento tipo;

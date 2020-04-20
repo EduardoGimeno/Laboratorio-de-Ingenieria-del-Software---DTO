@@ -9,9 +9,11 @@
  * @version 1.0, 01/04/2020
  */
 
-@Embeddable
 package ObjetoValor;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class Ubicacion {
 
     private String edificio;
