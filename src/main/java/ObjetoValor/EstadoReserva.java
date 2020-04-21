@@ -11,9 +11,9 @@
 package ObjetoValor;
 
 public enum EstadoReserva {
-    ACEPTADA("aceptada"),
-    RECHAZADA("rechazada"),
-    PENDIENTE("pendiente");
+    ACEPTADA("Aceptada"),
+    RECHAZADA("Rechazada"),
+    PENDIENTE("Pendiente");
 
     private String estado;
  
@@ -25,5 +25,18 @@ public enum EstadoReserva {
  
     public String getEstado() {
         return this.estado;
+    }
+    
+    public EstadoReserva valorDe (String estado) {
+        switch (estado) {
+            case "Aceptada":
+                return EstadoReserva.ACEPTADA;
+
+            case "Rechazada":
+                return EstadoReserva.RECHAZADA;
+
+            default:
+                return EstadoReserva.PENDIENTE;
+        }
     }
 }
