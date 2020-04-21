@@ -20,6 +20,8 @@ public enum EstadoReserva {
     EstadoReserva(String estado) {
         this.estado = estado;
     }
+
+    EstadoReserva() {}
  
     public String getEstado() {
         return this.estado;
