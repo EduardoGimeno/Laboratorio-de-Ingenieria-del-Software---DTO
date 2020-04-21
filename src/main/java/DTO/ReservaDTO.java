@@ -5,25 +5,24 @@ import ObjetoValor.Usuario;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.UUID;
 
 public class ReservaDTO implements Serializable {
 
-    private UUID id;
+    private String id;
     private Timestamp horaInicio;
     private Timestamp horaFin;
     private Timestamp fechaInicio;
     private Timestamp fechaFin;
     private EstadoReserva estado;
     private Usuario usuario;
-    private UUID idEspacio;
+    private String idEspacio;
     private int diasLectivos = 5;
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -75,11 +74,11 @@ public class ReservaDTO implements Serializable {
         this.usuario = usuario;
     }
 
-    public UUID getIdEspacio() {
+    public String getIdEspacio() {
         return idEspacio;
     }
 
-    public void setIdEspacio(UUID idEspacio) {
+    public void setIdEspacio(String idEspacio) {
         this.idEspacio = idEspacio;
     }
 
