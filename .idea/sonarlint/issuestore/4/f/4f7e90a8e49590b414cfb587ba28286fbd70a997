@@ -1,4 +1,4 @@
 
-f	java:S117R"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¡§™
-h	java:S116""NRename this field "NIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÜŠ©ıÿÿÿÿ
-k	java:S117*"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä×åúÿÿÿÿ
+r	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä×åúÿÿÿÿ8û©ıÏ™.
+m	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾¡§™8û©ıÏ™.
+o	java:S116$"NRename this field "NIA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÜŠ©ıÿÿÿÿ8û©ıÏ™.

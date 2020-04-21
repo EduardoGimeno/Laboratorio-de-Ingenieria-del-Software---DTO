@@ -19,7 +19,7 @@ public enum TipoEquipamiento {
         this.nombre = nombre;
     }
 
-
+    TipoEquipamiento() {}
  
     public String getNombre() {
         return this.nombre;
