@@ -10,6 +10,9 @@
 
 package ObjetoValor;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public enum EstadoReserva {
     ACEPTADA("aceptada"),
     RECHAZADA("rechazada"),
