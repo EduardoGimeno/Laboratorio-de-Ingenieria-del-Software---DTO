@@ -27,16 +27,4 @@ public enum EstadoReserva {
         return this.estado;
     }
 
-    public EstadoReserva valorDe (String estado) {
-        switch (estado) {
-            case "Aceptada":
-                return EstadoReserva.ACEPTADA;
-
-            case "Rechazada":
-                return EstadoReserva.RECHAZADA;
-
-            default:
-                return EstadoReserva.PENDIENTE;
-        }
-    }
 }

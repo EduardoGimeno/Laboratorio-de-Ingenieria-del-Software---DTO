@@ -1,10 +1,13 @@
 package DTO;
 
+import ObjetoValor.Dia;
 import ObjetoValor.EstadoReserva;
 import ObjetoValor.Usuario;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ReservaDTO implements Serializable {
 
@@ -16,7 +19,7 @@ public class ReservaDTO implements Serializable {
     private EstadoReserva estado;
     private Usuario usuario;
     private String idEspacio;
-    private int diasLectivos = 5;
+    private List<Dia> dias;
 
     public String getId() {
         return id;
@@ -82,11 +85,21 @@ public class ReservaDTO implements Serializable {
         this.idEspacio = idEspacio;
     }
 
-    public int getDiasLectivos() {
-        return diasLectivos;
+    public List<Dia> getDias() {
+        return this.dias;
     }
 
-    public void setDiasLectivos(int diasLectivos) {
-        this.diasLectivos = diasLectivos;
+    public void setDias(List<Dia> dias) {
+        this.dias = dias;
+    }
+
+    public List<String> getDiasString() {
+        return this.dias.stream()
+                .map(Dia::getDia)
+                .collect(Collectors.toList());
+    }
+
+    public void addDia(Dia dia) {
+        this.dias.add(dia);
     }
 }
