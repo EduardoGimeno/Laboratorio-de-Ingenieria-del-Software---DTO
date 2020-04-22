@@ -10,21 +10,23 @@
 package ObjetoValor;
 
 public enum Dia {
-    LUNES("Lunes"),
-    MARTES("Martes"),
-    MIERCOLES("Miercoles"),
-    JUEVES("Jueves"),
-    VIERNES("Viernes");
+    DOMINGO(1),
+    LUNES(2),
+    MARTES(3),
+    MIERCOLES(4),
+    JUEVES(5),
+    VIERNES(6),
+    SABADO(7);
 
-    private String dia;
+    private Integer dia;
 
-    Dia(String dia) {
+    Dia(Integer dia) {
         this.dia = dia;
     }
 
     Dia() {}
  
-    public String getDia() {
+    public Integer getDia() {
         return this.dia;
     }
 

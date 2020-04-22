@@ -93,7 +93,7 @@ public class ReservaDTO implements Serializable {
         this.dias = dias;
     }
 
-    public List<String> getDiasString() {
+    public List<Integer> getDiasString() {
         return this.dias.stream()
                 .map(Dia::getDia)
                 .collect(Collectors.toList());
