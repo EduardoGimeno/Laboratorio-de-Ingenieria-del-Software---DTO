@@ -26,7 +26,7 @@ public enum EstadoReserva {
     public String getEstado() {
         return this.estado;
     }
-    
+
     public EstadoReserva valorDe (String estado) {
         switch (estado) {
             case "Aceptada":
