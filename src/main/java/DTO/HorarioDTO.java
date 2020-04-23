@@ -1,6 +1,7 @@
 package DTO;
 
 
+import javax.persistence.criteria.CriteriaBuilder;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -9,9 +10,10 @@ import java.util.List;
 public class HorarioDTO implements Serializable {
 
     private String idEspacio;
-    private Timestamp horaInicio;
-    private Timestamp horaFin;
-    private List<Timestamp> horasOcupadas = new ArrayList<>();
+    private Timestamp dia;
+    private Integer horaInicio;
+    private Integer horaFin;
+    private List<Integer> horasOcupadas = new ArrayList<>();
 
     public String getIdEspacio() {
         return idEspacio;
@@ -21,35 +23,43 @@ public class HorarioDTO implements Serializable {
         this.idEspacio = idEspacio;
     }
 
-    public Timestamp getHoraInicio() {
+    public Timestamp getDia() {
+        return dia;
+    }
+
+    public void setDia(Timestamp dia) {
+        this.dia = dia;
+    }
+
+    public Integer getHoraInicio() {
         return horaInicio;
     }
 
-    public void setHoraInicio(Timestamp horaInicio) {
+    public void setHoraInicio(Integer horaInicio) {
         this.horaInicio = horaInicio;
     }
 
-    public Timestamp getHoraFin() {
+    public Integer getHoraFin() {
         return horaFin;
     }
 
-    public void setHoraFin(Timestamp horaFin) {
+    public void setHoraFin(Integer horaFin) {
         this.horaFin = horaFin;
     }
 
-    public List<Timestamp> getHorasOcupadas() {
+    public List<Integer> getHorasOcupadas() {
         return horasOcupadas;
     }
 
-    public void setHorasOcupadas(List<Timestamp> horasOcupadas) {
+    public void setHorasOcupadas(List<Integer> horasOcupadas) {
         this.horasOcupadas = horasOcupadas;
     }
 
-    public void addHoraOcupada(Timestamp hora) {
+    public void addHoraOcupada(Integer hora) {
         this.horasOcupadas.add(hora);
     }
 
-    public void addListaHorasOcupadas(List<Timestamp> horas) {
+    public void addListaHorasOcupadas(List<Integer> horas) {
         this.horasOcupadas.addAll(horas);
     }
 }
