@@ -23,3 +23,7 @@ V
 &src/main/java/ObjetoValor/Usuario.java,4\f\4f7e90a8e49590b414cfb587ba28286fbd70a997
 X
 (src/main/java/ObjetoValor/Ubicacion.java,6\b\6b4a04f6b656833985a188185c2ec5a441a3483a
+R
+"src/main/java/ObjetoValor/Dia.java,7\1\710bcc7b5cc7fce263e02833ea77a114547abb0b
+Q
+!src/main/java/DTO/HorarioDTO.java,a\8\a8309b36fb21938a09ba6504c646896ffcddcf55

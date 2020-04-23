@@ -3,6 +3,7 @@ package DTO;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 public class HorarioDTO implements Serializable {
@@ -10,7 +11,7 @@ public class HorarioDTO implements Serializable {
     private String idEspacio;
     private Timestamp horaInicio;
     private Timestamp horaFin;
-    private List<Timestamp> horasOcupadas;
+    private List<Timestamp> horasOcupadas = new ArrayList<>();
 
     public String getIdEspacio() {
         return idEspacio;
