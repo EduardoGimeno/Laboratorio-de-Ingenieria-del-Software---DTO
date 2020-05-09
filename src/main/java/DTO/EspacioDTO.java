@@ -1,16 +1,19 @@
 package DTO;
 
+import ObjetoValor.Equipamiento;
 import ObjetoValor.Ubicacion;
 
 import java.io.Serializable;
-import java.util.UUID;
+import java.util.List;
 
 public class EspacioDTO implements Serializable {
 
     private String id;
     private String tipo;
     private int capacidad;
+    private List<Equipamiento> equipamiento;
     private Ubicacion ubicacion;
+    private String notas;
 
     public String getId() {
         return id;
@@ -42,5 +45,21 @@ public class EspacioDTO implements Serializable {
 
     public void setUbicacion(Ubicacion ubicacion) {
         this.ubicacion = ubicacion;
+    }
+
+    public List<Equipamiento> getEquipamiento() {
+        return equipamiento;
+    }
+
+    public void setEquipamiento(List<Equipamiento> equipamiento) {
+        this.equipamiento = equipamiento;
+    }
+
+    public String getNotas() {
+        return notas;
+    }
+
+    public void setNotas(String notas) {
+        this.notas = notas;
     }
 }
