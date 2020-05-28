@@ -34,7 +34,7 @@ public class Equipamiento {
 
     public TipoEquipamiento getTipo() { return tipo; }
 
-    public String getTipoString() {
+    public String returnTipoString() {
         return tipo.getNombre();
     }
 
