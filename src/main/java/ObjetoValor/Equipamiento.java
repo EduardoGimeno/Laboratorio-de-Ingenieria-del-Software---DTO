@@ -32,7 +32,9 @@ public class Equipamiento {
         this.maxCantidad = maxCantidad;
     }
 
-    public String getTipo() {
+    public TipoEquipamiento getTipo() { return tipo; }
+
+    public String getTipoString() {
         return tipo.getNombre();
     }
 
