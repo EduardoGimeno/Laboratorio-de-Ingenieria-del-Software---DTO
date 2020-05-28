@@ -11,7 +11,12 @@ package ObjetoValor;
 
 public enum TipoEquipamiento {
     CANON("cañon"),
-    PIZARRA("pizarra");
+    PANTALLA("pantalla"),
+    TV("tv"),
+    VIDEO("video"),
+    DVD("dvd"),
+    PIZARRA("pizarra"),
+    ORDENADOR("ordenador");
 
     private String nombre;
  
