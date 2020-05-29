@@ -8,7 +8,7 @@
  * @version 2.0, 01/04/2020
  */
 
-package ObjetoValor;
+package Enum;
 
 public enum EstadoReserva {
     ACEPTADA("Aceptada"),

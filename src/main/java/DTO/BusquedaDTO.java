@@ -1,12 +1,12 @@
 package DTO;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class BusquedaDTO implements Serializable {
     private String edificio;
     private String tipoEspacio;
-    private boolean pizarra;
-    private boolean proyector;
+    private List<EquipamientoDTO> equipamiento;
     private int capacidad;
 
     public String getEdificio() {
@@ -25,22 +25,6 @@ public class BusquedaDTO implements Serializable {
         this.tipoEspacio = tipoEspacio;
     }
 
-    public boolean isPizarra() {
-        return pizarra;
-    }
-
-    public void setPizarra(boolean pizarra) {
-        this.pizarra = pizarra;
-    }
-
-    public boolean isProyector() {
-        return proyector;
-    }
-
-    public void setProyector(boolean proyector) {
-        this.proyector = proyector;
-    }
-
     public int getCapacidad() {
         return capacidad;
     }
@@ -49,4 +33,11 @@ public class BusquedaDTO implements Serializable {
         this.capacidad = capacidad;
     }
 
+    public List<EquipamientoDTO> getEquipamiento() {
+        return equipamiento;
+    }
+
+    public void setEquipamiento(List<EquipamientoDTO> equipamiento) {
+        this.equipamiento = equipamiento;
+    }
 }

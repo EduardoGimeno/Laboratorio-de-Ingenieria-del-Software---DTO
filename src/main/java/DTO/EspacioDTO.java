@@ -1,7 +1,15 @@
-package DTO;
+/*
+ * UbicacionDTO.java 1.0 29/05/2020
+ */
 
-import ObjetoValor.Equipamiento;
-import ObjetoValor.Ubicacion;
+/**
+ * Esta clase reprensenta el DTO de Espacio
+ *
+ * @author Gonzalo Berné
+ * @version 1.0, 29/05/2020
+ */
+
+package DTO;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,8 +19,8 @@ public class EspacioDTO implements Serializable {
     private String id;
     private String tipo;
     private int capacidad;
-    private List<Equipamiento> equipamiento;
-    private Ubicacion ubicacion;
+    private List<EquipamientoDTO> equipamiento;
+    private UbicacionDTO ubicacion;
     private String notas;
 
     public String getId() {
@@ -39,19 +47,19 @@ public class EspacioDTO implements Serializable {
         this.capacidad = capacidad;
     }
 
-    public Ubicacion getUbicacion() {
+    public UbicacionDTO getUbicacion() {
         return ubicacion;
     }
 
-    public void setUbicacion(Ubicacion ubicacion) {
+    public void setUbicacion(UbicacionDTO ubicacion) {
         this.ubicacion = ubicacion;
     }
 
-    public List<Equipamiento> getEquipamiento() {
+    public List<EquipamientoDTO> getEquipamiento() {
         return equipamiento;
     }
 
-    public void setEquipamiento(List<Equipamiento> equipamiento) {
+    public void setEquipamiento(List<EquipamientoDTO> equipamiento) {
         this.equipamiento = equipamiento;
     }
 

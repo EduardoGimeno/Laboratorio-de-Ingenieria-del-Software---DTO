@@ -7,7 +7,7 @@
  * @version 1.0, 22/04/2020
  */
 
-package ObjetoValor;
+package Enum;
 
 public enum Dia {
     DOMINGO(1),

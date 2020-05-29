@@ -1,11 +1,14 @@
 package DTO;
 
-public class DatosDTO {
+import java.io.Serializable;
+import java.util.List;
+
+public class DatosDTO implements Serializable {
 
     private String id;
-    private boolean pizarra;
-    private boolean proyector;
+    private List<EquipamientoDTO> equipamiento;
     private int capacidad;
+    private boolean reservable;
     private String notas;
 
     public String getId() {
@@ -16,20 +19,12 @@ public class DatosDTO {
         this.id = id;
     }
 
-    public boolean isPizarra() {
-        return pizarra;
+    public List<EquipamientoDTO> getEquipamiento() {
+        return equipamiento;
     }
 
-    public void setPizarra(boolean pizarra) {
-        this.pizarra = pizarra;
-    }
-
-    public boolean isProyector() {
-        return proyector;
-    }
-
-    public void setProyector(boolean proyector) {
-        this.proyector = proyector;
+    public void setEquipamiento(List<EquipamientoDTO> equipamiento) {
+        this.equipamiento = equipamiento;
     }
 
     public int getCapacidad() {
@@ -38,6 +33,14 @@ public class DatosDTO {
 
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
+    }
+
+    public boolean isReservable() {
+        return reservable;
+    }
+
+    public void setReservable(boolean reservable) {
+        this.reservable = reservable;
     }
 
     public String getNotas() {

@@ -1,8 +1,7 @@
 package DTO;
 
-import ObjetoValor.Dia;
-import ObjetoValor.EstadoReserva;
-import ObjetoValor.Usuario;
+import Enum.Dia;
+import Enum.EstadoReserva;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -17,7 +16,7 @@ public class ReservaDTO implements Serializable {
     private Timestamp fechaInicio;
     private Timestamp fechaFin;
     private EstadoReserva estado;
-    private Usuario usuario;
+    private UsuarioDTO usuario;
     private String idEspacio;
     private List<Dia> dias;
 
@@ -69,11 +68,11 @@ public class ReservaDTO implements Serializable {
         this.estado = estado;
     }
 
-    public Usuario getUsuario() {
+    public UsuarioDTO getUsuario() {
         return usuario;
     }
 
-    public void setUsuario(Usuario usuario) {
+    public void setUsuario(UsuarioDTO usuario) {
         this.usuario = usuario;
     }
 
