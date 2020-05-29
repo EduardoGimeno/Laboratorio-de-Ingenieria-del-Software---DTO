@@ -22,6 +22,7 @@ public class EspacioDTO implements Serializable {
     private List<EquipamientoDTO> equipamiento;
     private UbicacionDTO ubicacion;
     private String notas;
+    private Boolean reservable;
 
     public String getId() {
         return id;
@@ -69,5 +70,13 @@ public class EspacioDTO implements Serializable {
 
     public void setNotas(String notas) {
         this.notas = notas;
+    }
+
+    public Boolean getReservable() {
+        return reservable;
+    }
+
+    public void setReservable(Boolean reservable) {
+        this.reservable = reservable;
     }
 }
