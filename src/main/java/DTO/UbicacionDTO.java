@@ -19,18 +19,19 @@ public class UbicacionDTO implements Serializable {
 
     private int planta;
 
-    public UbicacionDTO() { }
-
-    public UbicacionDTO(String edificio, int planta) {
-        this.edificio = edificio;
-        this.planta = planta;
+    public String getEdificio() {
+        return edificio;
     }
 
-    public String getEdificio() {
-        return this.edificio;
+    public void setEdificio(String edificio) {
+        this.edificio = edificio;
     }
 
     public int getPlanta() {
-        return this.planta;
+        return planta;
+    }
+
+    public void setPlanta(int planta) {
+        this.planta = planta;
     }
 }
