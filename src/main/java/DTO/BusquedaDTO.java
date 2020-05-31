@@ -81,11 +81,11 @@ public class BusquedaDTO implements Serializable {
         this.horaFin = horaFin;
     }
 
-    public List<Enum.Dia> getDias() {
+    public List<Dia> getDias() {
         return dias;
     }
 
-    public void setDias(List<Enum.Dia> dias) {
+    public void setDias(List<Dia> dias) {
         this.dias = dias;
     }
 
