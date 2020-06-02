@@ -13,16 +13,19 @@ package DTO;
 
 import java.io.Serializable;
 import java.util.List;
+import com.vividsolutions.jts.geom.Geometry;
 
 public class EspacioDTO implements Serializable {
 
     private String id;
+    private String nombre;
     private String tipo;
     private int capacidad;
     private List<EquipamientoDTO> equipamiento;
     private UbicacionDTO ubicacion;
     private String notas;
     private Boolean reservable;
+    private Geometry geom;
 
     public String getId() {
         return id;
@@ -30,6 +33,22 @@ public class EspacioDTO implements Serializable {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Geometry getGeom() {
+        return geom;
+    }
+
+    public void setGeom(Geometry geom) {
+        this.geom = geom;
     }
 
     public String getTipo() {

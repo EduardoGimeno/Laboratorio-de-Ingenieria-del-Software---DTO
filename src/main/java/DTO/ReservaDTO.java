@@ -11,8 +11,8 @@ import java.util.stream.Collectors;
 public class ReservaDTO implements Serializable {
 
     private String id;
-    private Timestamp horaInicio;
-    private Timestamp horaFin;
+    private int horaInicio;
+    private int horaFin;
     private Timestamp fechaInicio;
     private Timestamp fechaFin;
     private EstadoReserva estado;
@@ -28,19 +28,19 @@ public class ReservaDTO implements Serializable {
         this.id = id;
     }
 
-    public Timestamp getHoraInicio() {
+    public int getHoraInicio() {
         return horaInicio;
     }
 
-    public void setHoraInicio(Timestamp horaInicio) {
+    public void setHoraInicio(int horaInicio) {
         this.horaInicio = horaInicio;
     }
 
-    public Timestamp getHoraFin() {
+    public int getHoraFin() {
         return horaFin;
     }
 
-    public void setHoraFin(Timestamp horaFin) {
+    public void setHoraFin(int horaFin) {
         this.horaFin = horaFin;
     }
 
