@@ -13,6 +13,11 @@ package DTO;
 
 import java.io.Serializable;
 import java.util.List;
+
+import com.bedatadriven.jackson.datatype.jts.serialization.GeometryDeserializer;
+import com.bedatadriven.jackson.datatype.jts.serialization.GeometrySerializer;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.vividsolutions.jts.geom.Geometry;
 
 public class EspacioDTO implements Serializable {
@@ -25,6 +30,9 @@ public class EspacioDTO implements Serializable {
     private UbicacionDTO ubicacion;
     private String notas;
     private Boolean reservable;
+
+    @JsonSerialize(using = GeometrySerializer.class)
+    @JsonDeserialize(using = GeometryDeserializer.class)
     private Geometry geom;
 
     public String getId() {

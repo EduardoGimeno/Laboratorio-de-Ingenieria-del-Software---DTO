@@ -25,6 +25,8 @@ dependencies {
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     implementation 'com.google.guava:guava:28.1-jre'
     implementation 'com.vividsolutions:jts:1.13'
+    implementation 'com.bedatadriven:jackson-datatype-jts:2.4'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.3'
     implementation 'javax.validation:validation-api:2.0.1.Final'
     implementation 'jakarta.persistence:jakarta.persistence-api:2.2.3'
 
